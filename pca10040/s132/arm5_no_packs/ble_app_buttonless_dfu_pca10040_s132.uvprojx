@@ -389,6 +389,11 @@
               <FileType>5</FileType>
               <FilePath>..\config\sdk_config.h</FilePath>
             </File>
+            <File>
+              <FileName>ab_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\ab_uart.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -4155,6 +4160,11 @@
               <FileName>sdk_config.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\config\sdk_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>ab_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\ab_uart.c</FilePath>
             </File>
           </Files>
         </Group>
