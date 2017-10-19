@@ -391,9 +391,9 @@
               <FilePath>..\config\sdk_config.h</FilePath>
             </File>
             <File>
-              <FileName>hx711.c</FileName>
+              <FileName>ads1230.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\hx711.c</FilePath>
+              <FilePath>..\..\..\ads1230.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -4164,9 +4164,9 @@
               <FilePath>..\config\sdk_config.h</FilePath>
             </File>
             <File>
-              <FileName>hx711.c</FileName>
+              <FileName>ads1230.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\hx711.c</FilePath>
+              <FilePath>..\..\..\ads1230.c</FilePath>
             </File>
           </Files>
         </Group>

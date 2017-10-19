@@ -88,7 +88,8 @@
 
 #include "app_uart.h"
 #include "app_util_platform.h"
-#include "hx711.h"
+//#include "hx711.h"
+#include "ads1230.h"
 
 
 #define APP_FEATURE_NOT_SUPPORTED       BLE_GATT_STATUS_ATTERR_APP_BEGIN + 2        /**< Reply when unsupported features are requested. */
@@ -136,7 +137,6 @@ BLE_ADVERTISING_DEF(m_advertising);
 static uint16_t   m_ble_nus_max_data_len = BLE_GATT_ATT_MTU_DEFAULT - 3;            /**< Maximum length of data (in bytes) that can be transmitted to the peer by the Nordic UART service module. */
 static uint16_t m_conn_handle = BLE_CONN_HANDLE_INVALID;                            /**< Handle of the current connection. */
 static void advertising_start(bool erase_bonds);                                    /**< Forward declaration of advertising start function */
-
 
 
 
@@ -1027,28 +1027,27 @@ int main(void)
     power_management_init();
     buttons_leds_init(&erase_bonds);
     ble_stack_init();
-    peer_manager_init();
-    gap_params_init();
+		peer_manager_init();
+		gap_params_init();
 		
 	
 		uart_init();
 	
-    gatt_init();
-    advertising_init();
-    services_init();
-    conn_params_init();
+		gatt_init();
+		advertising_init();
+		services_init();
+		conn_params_init();
 
     NRF_LOG_INFO("Application started\n");
 
     // Start execution.
     application_timers_start();
     advertising_start(erase_bonds);
-		HX711_init();
+		ADS1230_init();
     // Enter main loop.
     for (;;)
     {
 				Weighing();
-				nrf_delay_ms(50);
 				SEGGER_RTT_printf(0, "%d\n\r", adc_value);
     }
 }
