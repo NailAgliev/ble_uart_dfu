@@ -1048,7 +1048,7 @@ int main(void)
     for (;;)
     {
 				Weighing();
-				SEGGER_RTT_printf(0, "%d\n\r", adc_value);
+				//SEGGER_RTT_printf(0, "%d\n\r", adc_value);
     }
 }
 
