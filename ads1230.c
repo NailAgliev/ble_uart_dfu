@@ -3,7 +3,7 @@
 #include "nrf_gpio.h"
 
 
-
+//проверка русского
 uint32_t adc_value;
 uint8_t calib = 0;
 
