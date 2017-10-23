@@ -50,8 +50,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
-// привет мир
+//привет мир
 //руский язык
+//фждушапфцуождпзцшщшорпыфзпофыпзыопздл
 #include "nrf_dfu_svci.h"
 #include "nrf_svci_async_function.h"
 #include "nrf_svci_async_handler.h"
