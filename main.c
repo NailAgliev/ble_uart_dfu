@@ -50,7 +50,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
-// тест русского языка в гите и кеил
+// ГІГҐГ±ГІ Г°ГіГ±Г±ГЄГ®ГЈГ® ГїГ§Г»ГЄГ  Гў ГЈГЁГІГҐ ГЁ ГЄГҐГЁГ«
+//СЂСѓСЃРєРёР№ СЏР·С‹Рє
 #include "nrf_dfu_svci.h"
 #include "nrf_svci_async_function.h"
 #include "nrf_svci_async_handler.h"
