@@ -50,7 +50,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
-
+// тест русского языка в гите и кеил
 #include "nrf_dfu_svci.h"
 #include "nrf_svci_async_function.h"
 #include "nrf_svci_async_handler.h"
@@ -1048,7 +1048,7 @@ int main(void)
     for (;;)
     {
 				Weighing();
-				//SEGGER_RTT_printf(0, "%d\n\r", adc_value);
+				SEGGER_RTT_printf(0, "%d\n\r", adc_value);
     }
 }
 
